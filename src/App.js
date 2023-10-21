@@ -10,20 +10,43 @@ function App() {
   const [largeTitle, setLargeTitle] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    setIsLoading(true);
+  // useEffect(() => {
+  //   setIsLoading(true);
 
+  //   const fetchArticles = async () => {
+  //     const res = await fetch(
+  //       `http://hn.algolia.com/api/v1/search?query=${query}`
+  //     );
+  //     const data = await res.json();
+  //     setItems(data.hits);
+  //     setLargeTitle(data.hits[0]);
+  //   };
+
+  //   fetchArticles();
+  //   setIsLoading(false);
+  // }, [query]);
+  useEffect(() => {
     const fetchArticles = async () => {
-      const res = await fetch(
-        `http://hn.algolia.com/api/v1/search?query=${query}`
-      );
-      const data = await res.json();
-      setItems(data.hits);
-      setLargeTitle(data.hits[0]);
+      try {
+        const res = await fetch(
+          `https://hn.algolia.com/api/v1/search?query=${query}`
+        );
+        const data = await res.json();
+
+        if (data.hits && data.hits.length > 0) {
+          setLargeTitle(data.hits[0]);
+          setItems(data.hits);
+        } else {
+          toast("No results found.");
+        }
+      } catch (error) {
+        toast("An error occurred while fetching data.");
+      }
+
+      setIsLoading(false);
     };
 
     fetchArticles();
-    setIsLoading(false);
   }, [query]);
 
   const handleSubmit = (e) => {

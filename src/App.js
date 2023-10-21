@@ -25,6 +25,7 @@ function App() {
   //   fetchArticles();
   //   setIsLoading(false);
   // }, [query]);
+  
   useEffect(() => {
     const fetchArticles = async () => {
       try {

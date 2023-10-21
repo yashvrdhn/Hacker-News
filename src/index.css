@@ -6,13 +6,13 @@
 
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-size: 10px;
-  background-color: #8d8282;          /* c */
+  background-color: #8d8282; /* c */
 }
 
 form {
@@ -26,26 +26,25 @@ input {
   border: none;
   /* background-color: transparent; */
   padding: 1.25rem 1rem;
-  color: black;         /* c */
-  border: 0.1rem solid #E3DFFD;      /* c */
+  color: black; /* c */
+  border: 0.1rem solid #d5d1ed; /* c */
   margin-right: 1rem;
   border-radius: 0.625rem;
   font-style: oblique;
-
 }
 
 input::placeholder {
-  color: black;         /* c */
+  color: black; /* c */
 }
 
 button {
   font-family: inherit;
   font-size: 1.5 rem;
   outline: none;
-  border: none; 
+  border: none;
   /* background-color: #EEEEEE;         c */
   padding: 1.25rem 1rem;
-  border: 0.1rem solid #EEEEEE;      /* c */
+  border: 0.1rem solid #eeeeee; /* c */
   border-radius: 0.625rem;
   transition: all 0.15s ease-in-out;
   color: black;
@@ -54,7 +53,7 @@ button {
 button:hover {
   /* background-color: transparent; */
   cursor: pointer;
-  color: black;                  /* c */
+  color: black; /* c */
 }
 
 ul {
@@ -64,7 +63,6 @@ ul {
 a {
   text-decoration: none;
 }
-
 
 /* Loading spinner */
 .spinner {
@@ -91,12 +89,12 @@ a {
 /* End of loading spinner */
 
 .category {
-  color: rgb(95, 138, 103);          /* c */
+  color: rgb(95, 138, 103); /* c */
   margin-bottom: 1rem;
 }
 
-.category span { 
-  color: #a3b4c4;                    /* c */
+.category span {
+  color: #a3b4c4; /* c */
   font-weight: bold;
   text-transform: capitalize;
 }
@@ -108,7 +106,7 @@ a {
 .section .title h1 {
   font-weight: bold;
   font-size: 3rem;
-  color: #fff;                       /* c */
+  color: #fff; /* c */
   text-align: center;
   margin-bottom: 1rem;
 }
@@ -117,14 +115,14 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  color: slategray;                  /* c */
+  color: slategray; /* c */
   text-align: center;
   text-decoration: underline;
   margin-bottom: 2rem;
 }
 
 .section .title a:hover {
-  color: #fff;                       /* c */
+  color: #fff; /* c */
 }
 
 .section .cards {
@@ -134,13 +132,13 @@ a {
 }
 
 .section .cards div {
-  background-color:#333333;         /* c */
+  background-color: #333333; /* c */
   padding: 1rem;
   border-radius: 0.625rem;
 }
 
 .section .cards div h2 {
-  color: #fff;                       /* c */
+  color: #fff; /* c */
   margin-bottom: 1rem;
 }
 
@@ -152,22 +150,21 @@ a {
 }
 
 .section .cards div ul li {
-  color: slategray;                  /* c */
+  color: slategray; /* c */
 }
 
 .section .cards div ul li a {
-  color: slategray;                  /* c */
-  text-decoration: underline ;
+  color: slategray; /* c */
+  text-decoration: underline;
 }
 
 .section .cards div ul li a:hover {
-  color: #fff;                       /* c */
+  color: #fff; /* c */
 }
 
 .section .cards div p {
-  color: slategray;                  /* c */
+  color: slategray; /* c */
 }
-
 
 @media (min-width: 768px) {
   .section .cards {
